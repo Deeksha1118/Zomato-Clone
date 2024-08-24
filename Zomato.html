@@ -46,12 +46,22 @@
           </div>
         </nav>
       </header>
-      <div>
+      <div class = "heroSectionContainer">
         <img src = "./images/heroSectionLogo.png" alt ="Zomato Logo" class = "zomatoLogo" />
-        <h1>Discover the best food & drinks in Bengaluru</h1>
-        <div>
-          <input class="input" type="text" placeholder="Bengaluru" />
-          <input class="input" type="text" placeholder="Search for restaurant,cuisine or a dish" />
+        <h1 class = "heroSectionTitle">Discover the best food & drinks in Bengaluru</h1>
+        <div class = "heroSectionInputContainer">
+          <i class="fa-solid fa-location-dot" id = "locationIcon"></i>
+          <select class = "inputContainerLocation">
+            <option>Bengaluru</option>
+            <option>Mysore</option>
+            <option>Bidar</option>
+            <option>Hubli</option>
+            <option>Chikkamagaluru</option>
+            <option>Shimoga</option>
+            <option>Dharwad</option>
+          </select>
+          <i class="fa-solid fa-magnifying-glass" id = "searchIcon"></i>
+          <input class="inputContainerSearch" type="text" placeholder="Search for restaurant,cuisine or a dish" />
         </div>
       </div>
     </section>

@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center;
     min-height: 60vh;
+    color: white;
 }
 
 .navbar {
@@ -41,6 +42,65 @@
     display: none;
 }
 
+.heroSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;
+}
+
+.zomatoLogo {
+    width: 300px;
+    height: 60px;
+}
+
+.heroSectionTitle {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 395;
+}
+
+.heroSectionInputContainer {
+    background: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.inputContainerLocation, .inputContainerSearch {
+    padding: 4px;
+    border: none;
+    outline: none;
+}
+
+.inputContainerLocation {
+    width: 35%;
+    border-right: 2px solid #c0c0c0;
+    color: gray;
+    font-size: 12.9px;
+}
+
+.inputContainerSearch {
+    width: 65%;
+}
+
+#locationIcon {
+    color: rgb(239,79,95);
+    margin-top: -4px ;
+}
+
+#searchIcon {
+    color: #c0c0c0;
+    margin-right: 3px;
+}
+
+
 @media only screen and (max-width: 600px) {
     .menuContainer .userIcon {
         display: flex;
@@ -50,5 +110,20 @@
     }
     .heroSection {
         min-height: 80vh;
+    }
+    .heroSectionContainer {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        height: calc(80vh - 40px);
+    }
+    .inputContainerLocation, .inputContainerSearch {
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+    }
+    .heroSectionTitle {
+        font-size: 18px;
+        width: 98%;
     }
 }
