@@ -5,6 +5,8 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Hero Section */
+
 .heroSection {
     background: url(./images/heroSectionBackground.png);
     background-size: cover;
@@ -100,6 +102,7 @@
     margin-right: 3px;
 }
 
+/* media query for hero section */
 
 @media only screen and (max-width: 600px) {
     .menuContainer .userIcon {
@@ -115,7 +118,12 @@
         flex-direction: column;
         background-color: transparent;
         width: 100%;
-        height: calc(80vh - 40px);
+        height: calc(300px - 116px);
+    }
+    .zomatoLogo {
+        height: 60px;
+        width: 200px;
+        margin-top: 20px;
     }
     .inputContainerLocation, .inputContainerSearch {
         padding: 18px;
@@ -126,4 +134,65 @@
         font-size: 18px;
         width: 98%;
     }
+}
+
+@media only screen and (max-width: 400px) {
+    .heroSection {
+        width: 119%;
+    }
+    .heroSectionTitle {
+        font-size: 18px;
+        word-spacing: 0px;
+        margin-left: 47px;
+    }
+    .heroSectionContainer {
+        width: 102%;
+        height: 69%;
+    }
+}
+
+/* Card Section */
+
+.cardSection {
+    margin: 3rem auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardWeOffer {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.cardWeOffer:hover {
+    transition: all 0.25s ease;
+    transform: scale(1.1);
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.cardWeOffer img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contentWeOffer {
+    padding: 10px;
+}
+
+.contentWeOffer h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contentWeOffer p {
+    font-size: 12.5px;
+    font-weight: 400;
 }
